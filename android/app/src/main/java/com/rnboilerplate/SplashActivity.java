@@ -1,4 +1,4 @@
-package com.spotymanplayer;
+package com.rnboilerplate;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.spotymanplayer"
+        applicationId "com.rnboilerplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
