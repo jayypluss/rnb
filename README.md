@@ -1,6 +1,7 @@
 # rnb
 
 React Native Boilerplate (RNB) based on TS react-native cli default boilerplate with a few additions.
+This template was tested running only on Android, so it may not work right out-of-box on iOS without a few adjustments. If it does or does not, tell me! :)
 
 
 ## Comes with
