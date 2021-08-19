@@ -1,6 +1,6 @@
 # rnb
 
-This branch is the same as `main` but with the addition of a BabylonJS boilerplate.
+This branch is the same as [`main`](https://github.com/jayypluss/rnb/tree/main) but with the addition of a BabylonJS boilerplate.
 
 To add BabylonJS to this project, what I've done is this steps:
 
