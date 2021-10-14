@@ -4,7 +4,7 @@ if [[ -z $2 ]]; then
     # First argument is the project's current name
     OLD_NAME='RNBoilerplate'
     # Second argument is the project's new name
-    NEW_NAME=$2
+    NEW_NAME=$1
 else
     # First argument is the project's current name
     OLD_NAME=$1
