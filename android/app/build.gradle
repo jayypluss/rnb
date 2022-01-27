@@ -131,6 +131,15 @@ android {
     }
 
     defaultConfig {
+        ndk {
+            abiFilters "armeabi-v7a", "x86", 'armeabi', 'arm64-v8a'
+        }
+        packagingOptions {
+           exclude "lib/arm64-v8a/libgnustl_shared.so"
+           exclude '/lib/mips64/**'
+           exclude '/lib/arm64-v8a/**'
+           exclude '/lib/x86_64/**'
+        }
         applicationId "com.rnboilerplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
