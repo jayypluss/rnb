@@ -18,6 +18,10 @@ import {Provider} from 'react-redux'
 import {storeExample} from './reducers/storeExample'
 import {LogBox} from 'react-native'
 
+if (__DEV__) {
+	void import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
+}
+
 LogBox.ignoreLogs([
 	"[react-native-gesture-handler] Seems like you're using an old API with gesture components, check out new Gestures system!",
 ])
