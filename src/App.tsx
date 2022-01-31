@@ -15,7 +15,7 @@ import AppStack from './routes/AppStack'
 import SplashScreen from 'react-native-splash-screen'
 
 import {Provider} from 'react-redux'
-import {store} from './reducer/store'
+import {storeExample} from './reducers/storeExample'
 import {LogBox} from 'react-native'
 
 LogBox.ignoreLogs([
@@ -30,7 +30,7 @@ const App = () => {
 	}, [])
 
 	return (
-		<Provider store={store}>
+		<Provider store={storeExample}>
 			<AppStack />
 			<StatusBar
 				backgroundColor={'#d6283a'}

@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 
-interface Users {
+interface UsersExample {
 	id: number
 	email: string
 	first_name: string
@@ -11,7 +11,7 @@ interface Users {
 const usersSlice = createSlice({
 	name: 'users',
 	initialState: {
-		users: [] as Users[],
+		users: [] as UsersExample[],
 		loading: false,
 	},
 	reducers: {},
@@ -32,7 +32,7 @@ const usersSlice = createSlice({
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
 	const response = await fetch('https://reqres.in/api/users?delay=1')
 	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-	return (await response.json()).data as Users[]
+	return (await response.json()).data as UsersExample[]
 })
 
 export default usersSlice.reducer
