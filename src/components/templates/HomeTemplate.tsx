@@ -2,7 +2,7 @@ import React from 'react'
 import {View, Text} from 'react-native'
 // import './style.scss';
 
-const HomeTemplate: React.FC = () => {
+function HomeTemplate(): JSX.Element {
 	return (
 		<View>
 			<Text>This is Home!</Text>
