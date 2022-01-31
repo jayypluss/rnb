@@ -14,6 +14,9 @@ import {StatusBar, useColorScheme} from 'react-native';
 import AppStack from './src/routes/AppStack';
 import SplashScreen from 'react-native-splash-screen';
 
+import { Provider } from 'react-redux';
+import { store } from './src/reducer/store';
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -22,13 +25,13 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Provider store={store}>
       <AppStack />
       <StatusBar
         backgroundColor={'#d6283a'}
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
       />
-    </>
+    </Provider>
   );
 };
 
