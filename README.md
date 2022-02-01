@@ -1,7 +1,7 @@
 # rnb
 
 React Native Boilerplate (RNB) based on TS react-native cli default boilerplate with a few additions.
-React Native version: `0.64.1`
+React Native version: `0.67.1`
 This template was tested running only on Android, so it may not work right out-of-box on iOS without a few adjustments. If it does or does not, tell me! :)
 
 
@@ -14,6 +14,8 @@ This template was tested running only on Android, so it may not work right out-o
 - GitHub workflow yml file for CI automated build
 - Script for renaming project title
 - Configured Lint
+- Configured Prettier
+- Redux
 
 
 ## Scripts
